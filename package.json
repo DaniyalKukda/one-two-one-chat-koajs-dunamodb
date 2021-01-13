@@ -1,0 +1,71 @@
+{
+  "name": "rishta-aunty-chat-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": ".\\node_modules\\.bin\\ts-node src/index.ts",
+    "debug": ".\\node_modules\\.bin\\tsc",
+    "dev": ".\\node_modules\\.bin\\nodemon --exec ts-node src/index.ts",
+    "test": ".\\node_modules\\.bin\\jest"
+  },
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "@koa/cors": "^3.1.0",
+    "@koa/router": "^8.0.8",
+    "aws-sdk": "^2.771.0",
+    "koa": "^2.13.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-mount": "^4.0.0",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.1",
+    "redis": "^3.0.2",
+    "shortid": "^2.2.15",
+    "socket.io": "^2.3.0"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "json",
+      "ts",
+      "js"
+    ],
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/*.{ts,js}",
+      "!**/node_modules/**"
+    ],
+    "transform": {
+      "\\.ts$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "coverageReporters": [
+      "text",
+      "text-summary"
+    ],
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(js|ts)x?$",
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "devDependencies": {
+    "@types/hapi__joi": "^17.1.6",
+    "@types/jest": "^25.2.3",
+    "@types/koa": "^2.11.5",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-mount": "^4.0.0",
+    "@types/koa__cors": "^3.0.2",
+    "@types/koa__router": "^8.0.3",
+    "@types/lodash": "^4.14.162",
+    "@types/redis": "^2.8.28",
+    "@types/shortid": "0.0.29",
+    "@types/socket.io": "^2.1.11",
+    "@types/supertest": "^2.0.10",
+    "jest": "^26.5.3",
+    "nodemon": "^2.0.5",
+    "supertest": "^4.0.2",
+    "ts-jest": "^26.4.1",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  },
+  "author": "Ahsan",
+  "license": "ISC"
+}
